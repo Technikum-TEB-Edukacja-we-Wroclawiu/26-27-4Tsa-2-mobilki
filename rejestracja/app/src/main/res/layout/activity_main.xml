@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#FFECB3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="Przychodnia\nOstatnia Prosta"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybierz specjalistę"
+        android:layout_marginStart="20dp"
+        android:textSize="24sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioPsychiatrist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="psychiatra"/>
+
+        <RadioButton
+            android:id="@+id/radioNeurologist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="neurolog"/>
+
+        <RadioButton
+            android:id="@+id/radioProctologist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="proktolog"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz się!"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="24sp"
+        android:text="Czas oczekiwania na wizytę: ♾️"/>
+
+
+
+</LinearLayout>
